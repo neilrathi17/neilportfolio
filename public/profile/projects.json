@@ -92,15 +92,6 @@
                 "Azure AI servies",
                 "Generative AI"
             ]
-        },
-        {
-            // "image" : "images/projects/avatar.jpg",
-            "title": "Portfolio Website",
-            "bodyText": "- portfolio website made from scratch using react",
-            "tags" : [
-                "React",
-                "portfolio"
-            ]
         }
         
        
