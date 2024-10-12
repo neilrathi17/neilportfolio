@@ -19,7 +19,7 @@ function App() {
       <ThemeProvider theme={darkMode.valueOf ? darkTheme : lightTheme}>
         <GlobalStyles />
         <div className="App">
-          <BrowserRouter>
+          <BrowserRouter basename={process.env.PUBLIC_URL} >
             <MainApp />
           </BrowserRouter>
         </div>
