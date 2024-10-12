@@ -21,6 +21,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     boxShadow: '.5px 0 0 #000',
+    borderRight: '1px solid #3D84C6'
   },
   aboutContainer: {
     flex: 1,
@@ -29,7 +30,7 @@ const styles = {
     justifyContent: 'center',
   },
   nameStyle: {
-    fontSize: '5em',
+    fontSize: '3.5em',
     marginBottom: '30px',
   },
   imgStyle: {
@@ -79,8 +80,8 @@ function Portfolio() {
       <div style={styles.homeContainer}>
         {homeData ? (
           < >
-            <h3 style={styles.nameStyle}>{homeData?.name}</h3>
-            <img width={250} height={250} style={styles.imgStyle} src={aboutData?.imageSource} alt="profile" />
+            <h5 style={styles.nameStyle}>{homeData?.name}</h5>
+            <img width={220} height={220} style={styles.imgStyle} src={aboutData?.imageSource} alt="profile" />
             <Social />
           </>
         ) : <FallbackSpinner />}
