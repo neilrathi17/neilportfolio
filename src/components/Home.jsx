@@ -28,6 +28,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    padding: "20px"
   },
   nameStyle: {
     fontSize: '3.5em',
