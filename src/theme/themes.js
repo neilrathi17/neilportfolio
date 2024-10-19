@@ -24,11 +24,13 @@ export const lightTheme = {
 export const darkTheme = {
   background: '#00080f',
   color: '#eee',
+  timelineTextColor : '#0a0669',
   accentColor: '#3D84C6',
   chronoTheme: {
     cardBgColor: '#1B1B1B',
-    cardForeColor: '#eee',
+    cardForeColor: '#FFF',
     titleColor: 'black',
+    temp: 'white'
   },
   timelineLineColor: '#444',
   cardBackground: '#060606',
