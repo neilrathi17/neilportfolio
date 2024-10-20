@@ -10,10 +10,12 @@
 
 .navbar-custom {
   font-size:large;
+  background-color: black;
 }
 .header{
   padding: 10px;
 }
+
 
 .navbar__link {
   margin-left: 0.75em;

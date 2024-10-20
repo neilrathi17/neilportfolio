@@ -22,10 +22,10 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  background: '#00080f',
+  background: '#03001C',
   color: '#eee',
   timelineTextColor : '#0a0669',
-  accentColor: '#3D84C6',
+  accentColor: '#5B8FB9',
   chronoTheme: {
     cardBgColor: '#1B1B1B',
     cardForeColor: '#FFF',
