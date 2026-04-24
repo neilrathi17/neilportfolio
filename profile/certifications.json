@@ -1,0 +1,19 @@
+{
+    "certifications": [
+        {
+            "title": "AWS AI Practitioner",
+            "issuer": "Amazon Web Services",
+            "date": "2024"
+        },
+        {
+            "title": "Azure AI-900",
+            "issuer": "Microsoft",
+            "date": "2024"
+        },
+        {
+            "title": "AWS Certified Developer Associate",
+            "issuer": "Amazon Web Services",
+            "date": "2023"
+        }
+    ]
+}
