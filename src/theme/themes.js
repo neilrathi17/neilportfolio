@@ -34,13 +34,13 @@ export const darkTheme = {
   timelineTextColor: '#e5e5e5ff',
   accentColor: '#fca311ff',
   chronoTheme: {
-    cardBgColor: '#000000ff',
+    cardBgColor: '#0d1525',
     cardForeColor: '#e5e5e5ff',
     titleColor: '#fca311ff',
   },
   timelineLineColor: '#fca311ff',
-  cardBackground: '#000000ff',
-  cardFooterBackground: '#0a1628',
+  cardBackground: '#0d1525',
+  cardFooterBackground: '#0a1120',
   cardBorderColor: '#fca311ff40',
   navbarTheme: {
     linkColor: '#e5e5e5ff',
