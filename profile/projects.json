@@ -1,10 +1,9 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/forensics.jpg",
             "title": "Document Forensics",
-            "bodyText": "- Tool made with python to detect forgery in images and PDFs\n -  Uses image processing algorithms and machine learning to detect any signs of tampering on images and PDFs with near 100% success rate \n - Handwriting detection on printed receipts using a classification model developed from scratch",
-            
+            "category": "computer-vision",
+            "bodyText": "- Tool made with python to detect forgery in images and PDFs\n - Uses image processing algorithms and machine learning to detect any signs of tampering on images and PDFs with near 100% success rate\n - Handwriting detection on printed receipts using a classification model developed from scratch",
             "tags" : [
                 "Python",
                 "Image Processing",
@@ -13,10 +12,9 @@
             ]
         },
         {
-            "image" : "images/projects/segmentation.jpg",
             "title": "Image and Medical Segmentation",
-            "bodyText": "- Image segmentation projects that use deep learning models to isloate areas of an image that are of medical interest\n - Used custom written pytorch computer vision models as well as foundational models such as segment-anything\n - Output results are used by research team.",
-  
+            "category": "computer-vision",
+            "bodyText": "- Image segmentation projects that use deep learning models to isolate areas of an image that are of medical interest\n - Used custom written pytorch computer vision models as well as foundational models such as segment-anything\n - Output results are used by research team",
             "tags" : [
                 "Python",
                 "Pytorch",
@@ -25,22 +23,20 @@
             ]
         },
         {
-            "image" : "images/projects/expense-analysis.jpg",
             "title": "Intelligent Document Analysis",
-            "bodyText": "- Application made using python that leverages Azure Doc intelligence to efficiently extract key fields of interest from invoices and receipts\n -  Custom algorithms on top of doc intelligence for a more tailored output \n - Used by finance team to generate insights ",
-
+            "category": "ai",
+            "bodyText": "- Application made using python that leverages Azure Doc intelligence to efficiently extract key fields of interest from invoices and receipts\n - Custom algorithms on top of doc intelligence for a more tailored output\n - Used by finance team to generate insights",
             "tags" : [
                 "Python",
-                "Azure Ai servies",
-                "Doc inteligence",
+                "Azure AI Services",
+                "Doc Intelligence",
                 "LLMs"
             ]
         },
         {
-            "image" : "images/projects/understanding-images.png",
             "title": "Understanding of Data in Images",
-            "bodyText": "- Use LLMs and image processing to understand data in images \n - Langchain is used with openAI, bedrock etc to provide multiple options to the user.\n - Can generate text summaries of data in graphs, plots, etc ",
-
+            "category": "ai",
+            "bodyText": "- Use LLMs and image processing to understand data in images\n - Langchain is used with OpenAI, Bedrock etc to provide multiple options to the user\n - Can generate text summaries of data in graphs, plots, etc",
             "tags" : [
                 "Python",
                 "Generative AI",
@@ -50,10 +46,9 @@
             ]
         },
         {
-            "image" : "images/projects/lipsync.jpg",
             "title": "Lip Sync - Audio Cloning",
-            "bodyText": "- POC to take videos and translate them while keeping the original voice\n - Uses opensource and custom models with techniques such as LipGANs, FaceGans etc for lip syncing the video to a new audio\n - TTS and transciptions models are used on the audio side for a complete pipeline",
-
+            "category": "ai",
+            "bodyText": "- POC to take videos and translate them while keeping the original voice\n - Uses opensource and custom models with techniques such as LipGANs, FaceGans etc for lip syncing the video to a new audio\n - TTS and transcription models are used on the audio side for a complete pipeline",
             "tags" : [
                 "Python",
                 "Generative AI",
@@ -61,11 +56,10 @@
                 "Marketing"
             ]
         },
-
         {
-            "image" : "images/projects/translate.jpg",
             "title": "Image Translation",
-            "bodyText": "- Developed a tool to translate images from one language to another using only image processing techniques\n - Can translate images in a pdf and replace them in place\n - works on all languages and leverages google translate for text translation",
+            "category": "computer-vision",
+            "bodyText": "- Developed a tool to translate images from one language to another using only image processing techniques\n - Can translate images in a pdf and replace them in place\n - Works on all languages and leverages Google Translate for text translation",
             "tags" : [
                 "Python",
                 "Image Processing",
@@ -73,27 +67,25 @@
             ]
         },
         {
-            "image" : "images/projects/robot.jpg",
-            "title": "V2X Robot communication using LIDAR",
-            "bodyText": "- Wrote a custom simulation using ROS2 for robots equipped with LIDAR to communicate with each other on map to avoid collisions.\n - uses ROS2 HUMBLE with python along with Gazebo for simulation\n - Also worked on physcial robots - XIAOR-GEEK LIDAR ROBOT",
+            "title": "V2X Robot Communication using LIDAR",
+            "category": "computer-vision",
+            "bodyText": "- Wrote a custom simulation using ROS2 for robots equipped with LIDAR to communicate with each other on map to avoid collisions\n - Uses ROS2 HUMBLE with python along with Gazebo for simulation\n - Also worked on physical robots - XIAOR-GEEK LIDAR ROBOT",
             "tags" : [
                 "Python",
                 "ROS2",
-                "ROBOTICS",
+                "Robotics",
                 "Simulation"
             ]
         },
         {
-            "image" : "images/projects/avatar.jpg",
             "title": "AI Avatar Generation",
-            "bodyText": "- Leverages Azure AI speech resources and text to speech avatars\n - Python code to invoke model and customize avatar movements \n - developed for the marketting team",
+            "category": "ai",
+            "bodyText": "- Leverages Azure AI speech resources and text to speech avatars\n - Python code to invoke model and customize avatar movements\n - Developed for the marketing team",
             "tags" : [
                 "Python",
-                "Azure AI servies",
+                "Azure AI Services",
                 "Generative AI"
             ]
         }
-        
-       
     ]
 }
