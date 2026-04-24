@@ -7,9 +7,6 @@ import { ThemeContext } from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
 const styles = {
-  imageStyle: {
-    height: 150,
-  },
   badgeStyle: {
     paddingLeft: 10,
     paddingRight: 10,
@@ -19,13 +16,17 @@ const styles = {
   },
   cardStyle: {
     borderRadius: 10,
+    height: '100%',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
   },
   cardTitleStyle: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: 700,
+    marginBottom: 15,
   },
   cardTextStyle: {
     textAlign: 'left',
+    lineHeight: 1.6,
   },
   linkStyle: {
     textDecoration: 'none',
@@ -33,6 +34,11 @@ const styles = {
   },
   buttonStyle: {
     margin: 5,
+  },
+  cardBodyStyle: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
   },
 };
 
@@ -51,9 +57,9 @@ const ProjectCard = (props) => {
           borderColor: theme.cardBorderColor,
         }}
         text={theme.bsSecondaryVariant}
+        className="h-100"
       >
-        <Card.Img variant="top" src={project?.image} style={styles.imageStyle} />
-        <Card.Body>
+        <Card.Body style={styles.cardBodyStyle}>
           <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
           <Card.Text style={styles.cardTextStyle}>
             {parseBodyText(project.bodyText)}
@@ -96,6 +102,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     bodyText: PropTypes.string.isRequired,
+    category: PropTypes.string,
     image: PropTypes.string,
     links: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string.isRequired,

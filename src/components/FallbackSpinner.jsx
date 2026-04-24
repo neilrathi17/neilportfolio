@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Spinner } from 'react-bootstrap';
+import { ThemeContext } from 'styled-components';
 
 const styles = {
   spinnerContainerStyle: {
@@ -11,9 +12,14 @@ const styles = {
 };
 
 function FallbackSpinner() {
+  const theme = useContext(ThemeContext);
+  
   return (
     <div style={styles.spinnerContainerStyle}>
-      <Spinner animation="grow" />
+      <Spinner 
+        animation="grow" 
+        style={{ color: theme.accentColor }}
+      />
     </div>
   );
 }

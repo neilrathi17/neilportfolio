@@ -1,47 +1,53 @@
+// Color Palette
+// --black: #000000ff;
+// --prussian-blue: #14213dff;
+// --orange: #fca311ff;
+// --alabaster-grey: #e5e5e5ff;
+// --white: #ffffffff;
+
 export const lightTheme = {
-  background: '#fff',
-  color: '#121212',
-  accentColor: '#3D84C6',
+  background: '#e5e5e5ff',
+  color: '#14213dff',
+  accentColor: '#fca311ff',
   chronoTheme: {
-    cardBgColor: 'white',
-    cardForeColor: 'black',
-    titleColor: 'white',
+    cardBgColor: '#ffffffff',
+    cardForeColor: '#14213dff',
+    titleColor: '#fca311ff',
   },
-  timelineLineColor: '#ccc',
-  cardBackground: '#fff',
-  cardFooterBackground: '#f7f7f7',
-  cardBorderColor: '#00000020',
+  timelineLineColor: '#14213dff',
+  cardBackground: '#ffffffff',
+  cardFooterBackground: '#e5e5e5ff',
+  cardBorderColor: '#14213dff40',
   navbarTheme: {
-    linkColor: '#dedede',
-    linkHoverColor: '#fefefe',
-    linkActiveColor: '#fefefe',
+    linkColor: '#14213dff',
+    linkHoverColor: '#fca311ff',
+    linkActiveColor: '#fca311ff',
   },
   bsPrimaryVariant: 'light',
   bsSecondaryVariant: 'dark',
-  socialIconBgColor: '#121212',
+  socialIconBgColor: '#14213dff',
 };
 
 export const darkTheme = {
-  background: '#03001C',
-  color: '#eee',
-  timelineTextColor : '#0a0669',
-  accentColor: '#5B8FB9',
+  background: '#14213dff',
+  color: '#e5e5e5ff',
+  timelineTextColor: '#e5e5e5ff',
+  accentColor: '#fca311ff',
   chronoTheme: {
-    cardBgColor: '#1B1B1B',
-    cardForeColor: '#FFF',
-    titleColor: 'black',
-    temp: 'white'
+    cardBgColor: '#000000ff',
+    cardForeColor: '#e5e5e5ff',
+    titleColor: '#fca311ff',
   },
-  timelineLineColor: '#444',
-  cardBackground: '#060606',
-  cardFooterBackground: '#181818',
-  cardBorderColor: '#ffffff20',
+  timelineLineColor: '#fca311ff',
+  cardBackground: '#000000ff',
+  cardFooterBackground: '#0a1628',
+  cardBorderColor: '#fca311ff40',
   navbarTheme: {
-    linkColor: '#6EACDA',
-    linkHoverColor: '#FFFFFF',
-    linkActiveColor: '#FFFFFF',
+    linkColor: '#e5e5e5ff',
+    linkHoverColor: '#fca311ff',
+    linkActiveColor: '#fca311ff',
   },
   bsPrimaryVariant: 'dark',
   bsSecondaryVariant: 'light',
-  socialIconBgColor: '#fefefe',
+  socialIconBgColor: '#fca311ff',
 };

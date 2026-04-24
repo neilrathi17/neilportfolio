@@ -1,8 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {Fade, Slide} from 'react-awesome-reveal';
 import ReactMarkdown from 'react-markdown';
 import { Container, Row } from 'react-bootstrap';
+import { ThemeContext } from 'styled-components';
 // import PropTypes from 'prop-types';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -12,7 +13,7 @@ import endpoints from '../constants/endpoints';
 const styles = {
   portfolioContainer: {
     display: 'flex',
-    height: '100vh', // Make sure it takes the full height of the viewport
+    minHeight: 'calc(100vh - 8vh)',
   },
   homeContainer: {
     flex: 1,
@@ -20,8 +21,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    boxShadow: '.5px 0 0 #000',
-    borderRight: '1px solid #3D84C6'
+    borderRight: '2px solid',
   },
   aboutContainer: {
     flex: 1,
@@ -33,9 +33,11 @@ const styles = {
   nameStyle: {
     fontSize: '3.5em',
     marginBottom: '30px',
+    fontWeight: 700,
   },
   imgStyle: {
     borderRadius: '5px',
+    border: '3px solid',
   },
   introTextContainer: {
     margin: 10,
@@ -44,6 +46,7 @@ const styles = {
     textAlign: 'left',
     fontSize: '1.2em',
     fontWeight: 500,
+    lineHeight: 1.8,
   },
   introImageContainer: {
     margin: 10,
@@ -54,6 +57,7 @@ const styles = {
 };
 
 function Portfolio() {
+  const theme = useContext(ThemeContext);
   const [homeData, setHomeData] = useState(null);
   const [aboutData, setAboutData] = useState(null);
 
@@ -78,22 +82,41 @@ function Portfolio() {
   return (
     <div style={styles.portfolioContainer}>
       {/* Home Section */}
-      <div style={styles.homeContainer}>
+      <div style={{
+        ...styles.homeContainer,
+        backgroundColor: theme.background,
+        borderRightColor: theme.accentColor,
+      }}>
         {homeData ? (
           < >
-            <h5 style={styles.nameStyle}>{homeData?.name}</h5>
-            <img width={220} height={220} style={styles.imgStyle} src={aboutData?.imageSource} alt="profile" />
+            <h5 style={{
+              ...styles.nameStyle,
+              color: theme.color,
+            }}>{homeData?.name}</h5>
+            <img 
+              width={220} 
+              height={220} 
+              style={{
+                ...styles.imgStyle,
+                borderColor: theme.accentColor,
+              }} 
+              src={aboutData?.imageSource} 
+              alt="profile" 
+            />
             <Social />
           </>
         ) : <FallbackSpinner />}
       </div>
 
       {/* About Section */}
-      <div style={styles.aboutContainer}>
+      <div style={{
+        ...styles.aboutContainer,
+        backgroundColor: 'transparent',
+      }}>
         {aboutData ? (
           <Slide direction='down'>
             <Container>
-              <Row>
+              <Row style={{ color: theme.color }}>
                 {parseIntro(aboutData.about)}
               </Row>
             </Container>

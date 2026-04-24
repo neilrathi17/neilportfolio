@@ -58,7 +58,7 @@ function Experience(props) {
               <VerticalTimeline
                 lineColor={theme.timelineLineColor}
               >
-                {data.map((item) => (
+                {data.map((item, index) => (
                   <Fade>
                     <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -67,6 +67,7 @@ function Experience(props) {
                       dateInnerStyle={{ background: theme.accentColor }}
                       style={styles.itemStyle}
                       bodyContainerStyle={{ color: theme.color }}
+                      position={index % 2 === 0 ? 'left' : 'right'}
                     >
                       <h2 className="item-title">
                         {item.title}
