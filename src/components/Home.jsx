@@ -115,13 +115,13 @@ function Portfolio() {
         backgroundColor: 'transparent',
       }} className="about-section">
         {aboutData ? (
-          <Slide direction='down'>
+          <Fade triggerOnce direction="down" duration={800} fraction={0.2}>
             <Container>
               <Row style={{ color: theme.color }}>
                 {parseIntro(aboutData.about)}
               </Row>
             </Container>
-          </Slide>
+          </Fade>
         ) : <FallbackSpinner />}
       </div>
     </div>

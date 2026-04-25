@@ -5,8 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Enable smooth scrolling on html for browsers that need it */
+html {
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Custom scrollbar for smoother appearance */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fca311;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5940f;
 }

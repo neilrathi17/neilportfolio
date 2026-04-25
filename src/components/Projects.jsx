@@ -89,7 +89,7 @@ const Projects = (props) => {
 
               <Row xs={1} sm={1} md={2} lg={2} className="g-4">
                 {filteredProjects?.map((project) => (
-                  <Fade triggerOnce='true' direction="down" key={project.title}>
+                  <Fade triggerOnce direction="down" duration={600} cascade fraction={0.15}>
                     <ProjectCard project={project} />
                   </Fade>
                 ))}

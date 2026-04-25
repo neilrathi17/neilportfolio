@@ -59,7 +59,7 @@ function Experience(props) {
                 lineColor={theme.timelineLineColor}
               >
                 {data.map((item, index) => (
-                  <Fade>
+                  <Fade triggerOnce duration={700} cascade fraction={0.1} delay={index * 100}>
                     <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                       key={item.title + item.dateText}

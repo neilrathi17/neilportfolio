@@ -50,7 +50,12 @@ function About(props) {
         <Container>
           {data
             ? (
-              <Fade>
+              <Fade 
+                triggerOnce 
+                duration={800} 
+                cascade 
+                fraction={0.2}
+              >
                 <Row>
                   <Col xs={12} order={{ xs: 2, md: 1 }} style={styles.introTextContainer}>
                     {parseIntro(data.about)}

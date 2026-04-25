@@ -96,7 +96,7 @@ function Skills(props) {
                 paddingRight: 30,
               }} className="skills-col">
                 {renderSkillsIntro(skillsData.intro)}
-                <Fade>
+                <Fade triggerOnce duration={800} cascade fraction={0.15}>
                   {skillsData.skills?.map((category) => (
                     <div key={category.title} style={{ marginBottom: 25 }}>
                       <h5 style={{ 
@@ -138,7 +138,7 @@ function Skills(props) {
                 }}>
                   Certifications
                 </h4>
-                <Fade>
+                <Fade triggerOnce duration={800} cascade fraction={0.15} delay={200}>
                   {certData?.certifications?.map((cert, index) => (
                     <div
                       key={index}
