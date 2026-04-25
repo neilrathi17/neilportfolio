@@ -66,7 +66,7 @@ const ProjectCard = (props) => {
           </Card.Text>
         </Card.Body>
 
-        <Card.Body>
+        <Card.Body className="project-card-buttons">
           {project?.links?.map((link) => (
             <Button
               key={link.href}

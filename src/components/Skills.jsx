@@ -91,10 +91,10 @@ function Skills(props) {
           <Container fluid style={{ padding: '0 40px' }}>
             <Row style={{ minHeight: 'calc(100vh - 15vh)' }}>
               {/* Left Side - Skills */}
-              <Col md={6} style={{
+              <Col xs={12} md={6} style={{
                 borderRight: `2px solid ${theme.accentColor}`,
                 paddingRight: 30,
-              }}>
+              }} className="skills-col">
                 {renderSkillsIntro(skillsData.intro)}
                 <Fade>
                   {skillsData.skills?.map((category) => (
@@ -127,7 +127,7 @@ function Skills(props) {
               </Col>
 
               {/* Right Side - Certifications */}
-              <Col md={6} style={{ paddingLeft: 30 }}>
+              <Col xs={12} md={6} style={{ paddingLeft: 30 }} className="certifications-col">
                 <h4 style={{ 
                   color: theme.accentColor, 
                   marginBottom: 25,

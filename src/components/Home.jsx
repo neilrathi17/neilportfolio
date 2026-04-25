@@ -80,19 +80,19 @@ function Portfolio() {
   );
 
   return (
-    <div style={styles.portfolioContainer}>
+    <div style={styles.portfolioContainer} className="portfolio-container">
       {/* Home Section */}
       <div style={{
         ...styles.homeContainer,
         backgroundColor: theme.background,
         borderRightColor: theme.accentColor,
-      }}>
+      }} className="home-section">
         {homeData ? (
           < >
             <h5 style={{
               ...styles.nameStyle,
               color: theme.color,
-            }}>{homeData?.name}</h5>
+            }} className="name-style">{homeData?.name}</h5>
             <img 
               width={220} 
               height={220} 
@@ -102,6 +102,7 @@ function Portfolio() {
               }} 
               src={aboutData?.imageSource} 
               alt="profile" 
+              className="profile-image"
             />
             <Social />
           </>
@@ -112,7 +113,7 @@ function Portfolio() {
       <div style={{
         ...styles.aboutContainer,
         backgroundColor: 'transparent',
-      }}>
+      }} className="about-section">
         {aboutData ? (
           <Slide direction='down'>
             <Container>

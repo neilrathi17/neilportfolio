@@ -25,7 +25,7 @@ function Social() {
   }, []);
 
   return (
-    <div className="social">
+    <div className="social social-icons">
       {data ? data.social.map((social) => (
         <SocialIcon
           key={social.network}

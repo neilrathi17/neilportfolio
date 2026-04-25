@@ -52,11 +52,11 @@ function About(props) {
             ? (
               <Fade>
                 <Row>
-                  <Col style={styles.introTextContainer}>
+                  <Col xs={12} order={{ xs: 2, md: 1 }} style={styles.introTextContainer}>
                     {parseIntro(data.about)}
                   </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
+                  <Col xs={12} order={{ xs: 1, md: 2 }} style={styles.introImageContainer}>
+                    <img src={data?.imageSource} alt="profile" style={{ maxWidth: '100%', height: 'auto' }} />
                   </Col>
                 </Row>
               </Fade>

@@ -125,6 +125,13 @@ section.timeline-card-content div.card-description > p {
   margin-top: 60px;
 }
 
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -167,5 +174,111 @@ section.timeline-card-content div.card-description > p {
   font-weight: bold;
   margin-bottom: 25px;
   font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  /* Skills page - stack columns vertically */
+  .skills-col {
+    border-right: none !important;
+    border-bottom: 2px solid #fca311 !important;
+    padding-right: 15px !important;
+    padding-bottom: 20px !important;
+  }
+  
+  .certifications-col {
+    padding-left: 15px !important;
+    padding-top: 20px !important;
+  }
+  
+  /* About page image sizing */
+  .section-content-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Header font size on mobile */
+  .header {
+    font-size: 2em;
+  }
+  
+  /* Projects - adjust grid for mobile */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Experience timeline adjustments */
+  .vertical-timeline-element--work {
+    margin-left: 0 !important;
+  }
+  
+  /* Home page - stack side by side sections vertically */
+  .portfolio-container {
+    flex-direction: column !important;
+  }
+  
+  .home-section, .about-section {
+    border-right: none !important;
+    border-bottom: 2px solid #fca311 !important;
+    min-height: 50vh !important;
+  }
+  
+  .home-section {
+    padding: 20px !important;
+  }
+  
+  .about-section {
+    padding: 20px !important;
+  }
+  
+  /* Name font size on mobile */
+  .name-style {
+    font-size: 2em !important;
+    margin-bottom: 15px !important;
+  }
+  
+  /* Profile image on mobile */
+  .profile-image {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  /* Navbar mobile adjustments */
+  .navbar-custom {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .navbar-custom .navbar-nav {
+    margin-top: 10px;
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    padding: 10px 0 !important;
+  }
+  
+  /* Social icons on mobile */
+  .social-icons {
+    gap: 10px !important;
+  }
+  
+  /* Project card buttons on mobile */
+  .project-card-buttons {
+    flex-direction: column;
+  }
+  
+  .project-card-buttons button {
+    width: 100%;
+    margin: 5px 0 !important;
+  }
+  
+  /* Container padding on mobile */
+  .section-content-container {
+    padding: 10px !important;
+  }
+  
+  /* Chrono timeline on mobile */
+  .chrono-container {
+    width: 100% !important;
+  }
 }
 
