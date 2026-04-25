@@ -34,7 +34,7 @@ const Projects = (props) => {
   const theme = useContext(ThemeContext);
   const { header } = props;
   const [data, setData] = useState(null);
-  const [activeTab, setActiveTab] = useState('computer-vision');
+  const [activeTab, setActiveTab] = useState('ai');
 
   useEffect(() => {
     fetch(endpoints.projects, {
