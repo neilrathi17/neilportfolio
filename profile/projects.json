@@ -24,7 +24,7 @@
         },
         {
             "title": "Intelligent Document Analysis",
-            "category": "ai",
+            "category": "computer-vision",
             "bodyText": "- Application made using python that leverages Azure Doc intelligence to efficiently extract key fields of interest from invoices and receipts\n - Custom algorithms on top of doc intelligence for a more tailored output\n - Used by finance team to generate insights",
             "tags" : [
                 "Python",
@@ -79,12 +79,94 @@
         },
         {
             "title": "AI Avatar Generation",
-            "category": "ai",
+            "category": "computer-vision",
             "bodyText": "- Leverages Azure AI speech resources and text to speech avatars\n - Python code to invoke model and customize avatar movements\n - Developed for the marketing team",
             "tags" : [
                 "Python",
                 "Azure AI Services",
                 "Generative AI"
+            ]
+        },
+                {
+            "title": "AI Contract Negotiator",
+            "category": "ai",
+            "bodyText": "- Built using LangGraph, Bedrock and Chroma to assist with contract negotiations with clinical trial sites\n - Leverages fine-tuned LLMs to automate negotiation workflows\n - Reduced 12 FTE involved annually and cut negotiation times by 45%",
+            "tags": [
+                "Python",
+                "LangGraph",
+                "AWS Bedrock",
+                "LLMs",
+                "Chroma"
+            ]
+        },
+        {
+            "title": "ClinChat - Clinical Paper Analysis",
+            "category": "ai",
+            "bodyText": "- Application to generate summaries and compare multiple IMRAD clinical papers with an interactive chat function\n - Built with ReactJS, AWS ECS, OpenSearch and Azure OpenAI\n - Enables researchers to efficiently analyze and cross-reference clinical literature",
+            "tags": [
+                "Python",
+                "ReactJS",
+                "AWS",
+                "Azure OpenAI",
+                "NLP",
+                "LLMs"
+            ]
+        },
+        {
+            "title": "Medical Legal Review Assistant",
+            "category": "ai",
+            "bodyText": "- AI-powered tool to review promotional and recruitment material for clinical trials\n - Built with LangChain and OpenSearch, deployed on AWS ECR with Azure Cognitive Services for OCR\n - Reduces review and approval time by 32%",
+            "tags": [
+                "Python",
+                "LangChain",
+                "AWS",
+                "Azure AI Services",
+                "LLMs"
+            ]
+        },
+        {
+            "title": "TFL to ARDS Dataset Reverse Engineering",
+            "category": "ai",
+            "bodyText": "- Recreates ARDS datasets from TFLs for clinical trial data to support content generation and scientific publications\n - Uses a custom LLM-based parser alongside an .rtf to .jpg pipeline to process TFL tables\n - Estimated annual savings of $80,000 - $100,000",
+            "tags": [
+                "Python",
+                "LLMs",
+                "Document Processing",
+                "Clinical Data"
+            ]
+        },
+        {
+            "title": "Agentic Document Compliance",
+            "category": "ai",
+            "bodyText": "- Agentic system with MCP integrations to classify, validate and make recommendations on clinical documents against ALOCA+ standards\n - Built using CrewAI, LangChain and AWS Bedrock, with connections to AWS RDS\n - Saves an estimated 3-4 FTE per year",
+            "tags": [
+                "Python",
+                "CrewAI",
+                "LangChain",
+                "AWS Bedrock",
+                "Agentic AI"
+            ]
+        },
+        {
+            "title": "Live Inspections Translation Tool",
+            "category": "ai",
+            "bodyText": "- Critical tool built in ~1 week to live-translate inspections in Europe\n - Python-based .exe that uses Azure Translate to mirror scribe text from a source document to a target document in real time\n - Automatically detects end of lines and paragraphs to trigger translations seamlessly",
+            "tags": [
+                "Python",
+                "Azure AI Services",
+                "NLP",
+                "Translation"
+            ]
+        },
+        {
+            "title": "Calendar Productivity Tool",
+            "category": "ai",
+            "bodyText": "- Analyzes calendars for the clinical team to surface insights on meetings, attendees and molecule priorities\n - Built with Microsoft Graph API, Python and LLMs\n - Makes actionable recommendations aligned with organizational goals",
+            "tags": [
+                "Python",
+                "Microsoft Graph API",
+                "LLMs",
+                "Productivity"
             ]
         }
     ]
