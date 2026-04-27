@@ -61,7 +61,17 @@ function About(props) {
                     {parseIntro(data.about)}
                   </Col>
                   <Col xs={12} order={{ xs: 1, md: 2 }} style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" style={{ maxWidth: '100%', height: 'auto' }} />
+                    <img
+                      src={data?.imageSource}
+                      alt="profile"
+                      style={{
+                        maxWidth: '100%',
+                        height: 'auto',
+                        maxHeight: '500px',
+                        objectFit: 'cover',
+                        borderRadius: '10px',
+                      }}
+                    />
                   </Col>
                 </Row>
               </Fade>
