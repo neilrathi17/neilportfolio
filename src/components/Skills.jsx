@@ -55,6 +55,15 @@ const styles = {
   },
 };
 
+// Split items into two columns for desktop
+const splitItemsIntoColumns = (items) => {
+  const mid = Math.ceil(items.length / 2);
+  return {
+    left: items.slice(0, mid),
+    right: items.slice(mid),
+  };
+};
+
 function Skills(props) {
   const theme = useContext(ThemeContext);
   const { header } = props;
@@ -106,21 +115,63 @@ function Skills(props) {
                       }}>
                         {category.title}
                       </h5>
-                      {category.items.map((item) => (
-                        <div key={item.title} style={styles.skillItemStyle}>
-                          <img
-                            style={styles.skillIconStyle}
-                            src={item.icon}
-                            alt={item.title}
-                          />
-                          <span style={{ 
-                            ...styles.skillTextStyle, 
-                            color: theme.color 
-                          }}>
-                            {item.title}
-                          </span>
-                        </div>
-                      ))}
+                      {/* Two columns for desktop, single column for mobile */}
+                      <div className="d-none d-md-block">
+                        <Row>
+                          <Col md={6}>
+                            {splitItemsIntoColumns(category.items).left.map((item) => (
+                              <div key={item.title} style={styles.skillItemStyle}>
+                                <img
+                                  style={styles.skillIconStyle}
+                                  src={item.icon}
+                                  alt={item.title}
+                                />
+                                <span style={{ 
+                                  ...styles.skillTextStyle, 
+                                  color: theme.color 
+                                }}>
+                                  {item.title}
+                                </span>
+                              </div>
+                            ))}
+                          </Col>
+                          <Col md={6}>
+                            {splitItemsIntoColumns(category.items).right.map((item) => (
+                              <div key={item.title} style={styles.skillItemStyle}>
+                                <img
+                                  style={styles.skillIconStyle}
+                                  src={item.icon}
+                                  alt={item.title}
+                                />
+                                <span style={{ 
+                                  ...styles.skillTextStyle, 
+                                  color: theme.color 
+                                }}>
+                                  {item.title}
+                                </span>
+                              </div>
+                            ))}
+                          </Col>
+                        </Row>
+                      </div>
+                      {/* Single column for mobile */}
+                      <div className="d-md-none">
+                        {category.items.map((item) => (
+                          <div key={item.title} style={styles.skillItemStyle}>
+                            <img
+                              style={styles.skillIconStyle}
+                              src={item.icon}
+                              alt={item.title}
+                            />
+                            <span style={{ 
+                              ...styles.skillTextStyle, 
+                              color: theme.color 
+                            }}>
+                              {item.title}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </Fade>

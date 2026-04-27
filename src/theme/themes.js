@@ -11,7 +11,7 @@ export const lightTheme = {
   accentColor: '#fca311ff',
   chronoTheme: {
     cardBgColor: '#ffffffff',
-    cardForeColor: '#14213dff',
+    cardForeColor: '#000000',
     titleColor: '#fca311ff',
   },
   timelineLineColor: '#14213dff',
@@ -34,8 +34,8 @@ export const darkTheme = {
   timelineTextColor: '#e5e5e5ff',
   accentColor: '#fca311ff',
   chronoTheme: {
-    cardBgColor: '#0d1525',
-    cardForeColor: '#e5e5e5ff',
+    cardBgColor: '#ffffffff',
+    cardForeColor: '#000000',
     titleColor: '#fca311ff',
   },
   timelineLineColor: '#fca311ff',

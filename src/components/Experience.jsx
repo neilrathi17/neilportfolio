@@ -64,9 +64,11 @@ function Experience(props) {
                     className="vertical-timeline-element--work"
                       key={item.title + item.dateText}
                       dateText={item.dateText}
-                      dateInnerStyle={{ background: theme.accentColor }}
+                      dateInnerStyle={{ background: theme.accentColor, color: '#000000' }}
                       style={styles.itemStyle}
-                      bodyContainerStyle={{ color: theme.color }}
+                      contentStyle={{ background: theme.chronoTheme.cardBgColor, color: theme.chronoTheme.cardForeColor, border: `2px solid ${theme.accentColor}`, borderRadius: '8px' }}
+                      contentArrowStyle={{ borderRight: `7px solid ${theme.accentColor}` }}
+                      bodyContainerStyle={{ color: theme.chronoTheme.cardForeColor }}
                       position={index % 2 === 0 ? 'left' : 'right'}
                     >
                       <h2 className="item-title">
@@ -84,7 +86,7 @@ function Experience(props) {
                         </h5>
                         )}
                       </div>
-                      <ul style={{...styles.ulStyle, color: theme.accentColor}}>
+                      <ul style={{...styles.ulStyle, color: theme.chronoTheme.cardForeColor}}>
                         {item.workDescription.map((point) => (
                           <div key={point}>
                             <li>

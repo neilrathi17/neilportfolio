@@ -60,7 +60,7 @@ const ProjectCard = (props) => {
         className="h-100"
       >
         <Card.Body style={styles.cardBodyStyle}>
-          <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
+          <Card.Title style={{ ...styles.cardTitleStyle, color: theme.accentColor }}>{project.title}</Card.Title>
           <Card.Text style={styles.cardTextStyle}>
             {parseBodyText(project.bodyText)}
           </Card.Text>
@@ -86,7 +86,12 @@ const ProjectCard = (props) => {
                 pill
                 bg={theme.bsSecondaryVariant}
                 text={theme.bsPrimaryVariant}
-                style={styles.badgeStyle}
+                style={{
+                  ...styles.badgeStyle,
+                  border: `1px solid ${theme.accentColor}`,
+                  backgroundColor: 'transparent',
+                  color: theme.accentColor,
+                }}
               >
                 {tag}
               </Badge>
