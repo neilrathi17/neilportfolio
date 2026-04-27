@@ -57,6 +57,14 @@
                 {
                     "icon": "images/skills/langchain.svg",
                     "title": "Lanchain"
+                },
+                {
+                    "icon": "images/skills/mcp.svg",
+                    "title": "MCP"
+                },
+                {
+                    "icon": "images/skills/a2a.svg",
+                    "title": "A2A"
                 }
             ]
         },
